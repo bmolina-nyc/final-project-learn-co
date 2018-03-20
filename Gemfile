@@ -36,6 +36,20 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'foreman', '~> 0.82.0'
 
+
+gem 'devise', '>= 4.0'
+gem 'simple_token_authentication', '~> 1.0'
+
+group :test do
+  gem 'minitest-reporters'
+  gem 'vcr'
+  gem 'webmock'
+end
+
+
+gem 'dotenv-rails'
+gem 'faraday'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
